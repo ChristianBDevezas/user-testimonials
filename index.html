@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Box</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="box-switcher.css" />
+  </head>
+  <body>
+    <h2 class="title">Responsive User Testimonials</h2>
+
+    <div class="container">
+      <div class="progress-bar"></div>
+      
+      <div class="quotes">
+        <span class="fas fa-quote-left quote"></span>
+        <span class="fas fa-quote-right quote"></span>
+      </div>
+
+      <div class="indicators">
+        <span class="current"></span> / <span class="total"></span>
+      </div>
+
+      <p class="testimonial"></p>
+
+      <div class="user">
+        <img src="" alt="user" class="user__image"/>
+
+        <div class="user__details">
+          <h4 class="user__name"></h4>
+          <p class="user__role"></p>
+        </div>
+      </div>
+    </div>
+
+    <!--Javascript-->
+    <script src="box-switcher.js"></script>
+  </body>
+</html>
