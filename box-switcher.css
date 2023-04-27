@@ -147,7 +147,9 @@ h2.title {
     font-size: 1.2rem;
   }
 
-  .container {padding: 35px 60px;}
+  .container {
+    padding: 35px 60px;
+  }
 
   .quote {
     top: 50px;
@@ -162,13 +164,28 @@ h2.title {
   }
 
   .current-second {
-    display: none;
+    top: 12px;
+    left: calc(55px + 1vw);
   }
 }
 
 @media(max-width: 300px) {
   .container {
     padding: 20px 35px;
+  }
+
+  .current-user {
+    right: 5px;
+    top: 5px;
+  }
+
+  .current-second {
+    top: 5px;
+    left: calc(35px + 1vw);
+  }
+
+  .quote {
+    display: none;
   }
 
   .testimonial,
