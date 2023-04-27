@@ -2,11 +2,13 @@ const testimonial = document.querySelector('.testimonial');
 const userImage = document.querySelector('.user__image');
 const username = document.querySelector('.user__name');
 const userRole = document.querySelector('.user__role');
-const indicators = document.querySelector(".indicators");
+const indicators = document.querySelector(".current-user");
 const currentUser = document.querySelector(".current");
 const total = document.querySelector(".total");
 const quotes = document.querySelector(".quotes");
+const currentSecond = document.querySelector(".current-second");
 let index = 1;
+let second = 0;
 
 // Users data
 const userTestimonials = [
@@ -61,6 +63,15 @@ const userTestimonials = [
   },
 ]
 
+// Change the seconds
+const changeSeconds = () => {
+  second++;
+  
+  currentSecond.innerHTML = `${second}s`;
+
+  if(second > userTestimonials.length - 1) second = -1;
+}
+
 // Initial loading
 const loadPage = () => {
   testimonial.innerHTML = userTestimonials[0].text;
@@ -70,6 +81,10 @@ const loadPage = () => {
 
   currentUser.innerHTML = index;
   total.innerHTML = userTestimonials.length;
+
+  currentSecond.innerHTML = `${second}s`;
+
+  setInterval(changeSeconds, 1000);
 }
 loadPage();
 

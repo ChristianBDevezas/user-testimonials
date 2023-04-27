@@ -67,10 +67,24 @@ h2.title {
   right: 29px;
 }
 
-.indicators {
+.current-user {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.current-second {
+  position: absolute;
+  top: 29px;
+  left: 10.8%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  animation: change-color 8s linear infinite;
+}
+@keyframes change-color {
+  0% {color: white;}
+  45% {color: white;}
+  100% {color: orangered;}
 }
 
 .testimonial {
@@ -145,6 +159,10 @@ h2.title {
   }
   .fa-quote-right {
     right: 20px;
+  }
+
+  .current-second {
+    display: none;
   }
 }
 
